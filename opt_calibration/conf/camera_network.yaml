@@ -1,0 +1,38 @@
+
+enable_people_tracking: false
+enable_pose: true
+enable_object: true
+
+# Camera network parameters
+network:
+  - pc: "turtlebot"
+    sensors:
+      - type: realsense
+        id: "realsense1"
+        serial: "819312070183"
+        people_detector: hog
+  - pc: "turtlebot"
+    sensors:
+      - type: realsense
+        id: "realsense4" 
+        serial: "950122060788"
+        people_detector: hog
+#  - pc: "Jetson2"
+#    sensors:
+#      - type: realsense
+#        id: "realsense3"
+#        people_detector: hog
+
+#  - pc: "Jetson2"
+#    sensors:
+#      - type: realsense
+#        id: "realsense4"
+#        people_detector: hog
+
+# Checkerboard parameters
+checkerboard:
+  rows: 5
+  cols: 8
+  cell_width: 0.04
+  cell_height: 0.04
+

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- SESSION ID: 1715076698 -->
+<!-- SERIAL: 950122060788 -->
+<launch>
+
+  <!-- Sensor parameters -->
+  <arg name="sensor_name"     default="realsense4" />
+  <arg name="sensor_id" default="950122060788" />
+
+  <!-- Launch sensor -->
+<include file="$(find realsense2_camera)/launch/rs_rgbd.launch">
+    <arg name="serial_no"           value="$(arg sensor_id)" />
+      <arg name="camera"         value="$(arg sensor_name)" />
+  </include>
+
+</launch>

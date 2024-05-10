@@ -1,0 +1,48 @@
+# Auto generated file.
+calibration_id: 1715084970
+
+# Poses w.r.t. the "world" reference frame
+poses:
+  realsense1:
+    translation:
+      x: 0.0166753
+      y: 0.0165412
+      z: 1.45413
+    rotation:
+      x: 0.720295
+      y: 0.684359
+      z: 0.0288402
+      w: -0.109526
+  realsense4:
+    translation:
+      x: 0.809483
+      y: 0.0695038
+      z: 0.880927
+    rotation:
+      x: 0.668069
+      y: 0.663051
+      z: -0.14799
+      w: -0.303557
+
+# Inverse poses
+inverse_poses:
+  realsense1:
+    translation:
+      x: -0.295634
+      y: 0.15614
+      z: 1.41537
+    rotation:
+      x: 0.720295
+      y: 0.684359
+      z: 0.0288402
+      w: 0.109526
+  realsense4:
+    translation:
+      x: -0.310515
+      y: -0.118651
+      z: 1.15136
+    rotation:
+      x: 0.668069
+      y: 0.663051
+      z: -0.14799
+      w: 0.303557
