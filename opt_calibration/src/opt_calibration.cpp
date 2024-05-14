@@ -54,7 +54,7 @@ const double TreeNode::MAX_ERROR = 10000.0;
 
 OPTCalibration::OPTCalibration(const ros::NodeHandle & node_handle)
   : node_handle_(node_handle),
-    world_(boost::make_shared<cb::BaseObject>("/world")),
+    world_(boost::make_shared<cb::BaseObject>("world")),
     tree_initialized_(false),
     initialization_(true),
     last_optimization_(OPTIMIZATION_COUNT),

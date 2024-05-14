@@ -8,16 +8,15 @@ set(CMAKE_BUILD_TYPE Release)#RelWithDebInfo)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS cmake_modules roscpp opt_msgs detection calibration_common camera_info_manager cv_bridge image_transport tf_conversions pcl_ros swissranger_camera) #  kinect 
+find_package(catkin REQUIRED COMPONENTS cmake_modules roscpp calibration_common camera_info_manager cv_bridge image_transport tf_conversions pcl_ros opt_msgs swissranger_camera) #  detection kinect 
 
 ## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
 find_package(Boost REQUIRED)
 find_package(Eigen3 REQUIRED)
-find_package(PCL REQUIRED)
 find_package(OpenCV REQUIRED)
-
 find_package(OpenMP REQUIRED)
+find_package(PCL REQUIRED)
+
 if(OPENMP_FOUND)
     message("OpenMP FOUND")
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
@@ -34,7 +33,7 @@ endif()
 catkin_package(
   INCLUDE_DIRS include
 #  LIBRARIES
-  CATKIN_DEPENDS roscpp opt_msgs calibration_common camera_info_manager cv_bridge image_transport swissranger_camera
+#  CATKIN_DEPENDS roscpp opt_msgs calibration_common camera_info_manager cv_bridge image_transport swissranger_camera
 #  DEPENDS eigen pcl opencv2
 )
 
@@ -65,21 +64,21 @@ target_link_libraries(opt_calibration
 )
 
 # Publish camera_info topic for stereo:
-add_executable(stereo_publisher apps/stereo_publisher.cpp)
+#add_executable(stereo_publisher apps/stereo_publisher.cpp)
 
-target_link_libraries(stereo_publisher
-  ${catkin_LIBRARIES}
-  ${PCL_LIBRARIES}
-  ${OpenCV_LIBS}
-)
+#target_link_libraries(stereo_publisher
+#  ${catkin_LIBRARIES}
+#  ${PCL_LIBRARIES}
+#  ${OpenCV_LIBS}
+#)
 
-add_executable(opt_calibration_refinement
-  apps/opt_calibration_refinement.cpp
-  src/trajectory_registration.cpp
-)
-target_link_libraries(opt_calibration_refinement
-  ${catkin_LIBRARIES}
-)
+#add_executable(opt_calibration_refinement
+#  apps/opt_calibration_refinement.cpp
+#  src/trajectory_registration.cpp
+#)
+#target_link_libraries(opt_calibration_refinement
+#  ${catkin_LIBRARIES}
+#)
 
 add_executable(opt_define_reference_frame
   src/opt_calibration.cpp              include/open_ptrack/opt_calibration/opt_calibration.h

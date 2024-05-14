@@ -1,48 +1,88 @@
 # Auto generated file.
-calibration_id: 1715084970
+calibration_id: 1715680161
 
 # Poses w.r.t. the "world" reference frame
 poses:
-  realsense1:
+  ealsense2:
     translation:
-      x: 0.0166753
-      y: 0.0165412
-      z: 1.45413
+      x: -0.483109
+      y: 1.21794
+      z: 1.0622
     rotation:
-      x: 0.720295
-      y: 0.684359
-      z: 0.0288402
-      w: -0.109526
-  realsense4:
+      x: 0.548985
+      y: 0.740979
+      z: -0.139324
+      w: 0.36077
+  ealsense3:
     translation:
-      x: 0.809483
-      y: 0.0695038
-      z: 0.880927
+      x: 0.512591
+      y: 1.28124
+      z: 0.823591
     rotation:
-      x: 0.668069
-      y: 0.663051
-      z: -0.14799
-      w: -0.303557
+      x: 0.624863
+      y: 0.672485
+      z: -0.34583
+      w: 0.194194
+  ealsense1:
+    translation:
+      x: -0.483135
+      y: -0.692109
+      z: 0.978094
+    rotation:
+      x: 0.737777
+      y: 0.55181
+      z: 0.360619
+      w: -0.145414
+  ealsense4:
+    translation:
+      x: 0.464026
+      y: -0.69608
+      z: 0.779733
+    rotation:
+      x: 0.669852
+      y: 0.625469
+      z: 0.213353
+      w: -0.338477
 
 # Inverse poses
 inverse_poses:
-  realsense1:
+  ealsense2:
     translation:
-      x: -0.295634
-      y: 0.15614
-      z: 1.41537
+      x: -0.204202
+      y: -0.196349
+      z: 1.66277
     rotation:
-      x: 0.720295
-      y: 0.684359
-      z: 0.0288402
-      w: 0.109526
-  realsense4:
+      x: 0.548985
+      y: 0.740979
+      z: -0.139324
+      w: -0.36077
+  ealsense3:
     translation:
-      x: -0.310515
-      y: -0.118651
-      z: 1.15136
+      x: -0.259984
+      y: -0.290682
+      z: 1.55902
     rotation:
-      x: 0.668069
-      y: 0.663051
-      z: -0.14799
-      w: 0.303557
+      x: 0.624863
+      y: 0.672485
+      z: -0.34583
+      w: -0.194194
+  ealsense1:
+    translation:
+      x: -0.123225
+      y: 0.0232943
+      z: 1.28584
+    rotation:
+      x: 0.737777
+      y: 0.55181
+      z: 0.360619
+      w: 0.145414
+  ealsense4:
+    translation:
+      x: -0.128997
+      y: -0.302329
+      z: 1.09535
+    rotation:
+      x: 0.669852
+      y: 0.625469
+      z: 0.213353
+      w: 0.338477

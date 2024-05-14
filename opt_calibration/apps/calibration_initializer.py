@@ -131,7 +131,7 @@ class CalibrationInitializer :
 
     index = 0
     for sensor in self.sensor_list:
-      file.write('    <param name="sensor_' + str(index) + '/name"         value="/$(arg sensor_' + str(index) + '_name)" />\n')
+      file.write('    <param name="sensor_' + str(index) + '/name"         value="$(arg sensor_' + str(index) + '_name)" />\n')
       # if sensor['type'] == 'sr4500':
       #   file.write('    <param name="sensor_' + str(index) + '/type"         value="pinhole_rgb" />\n')
       #   file.write('    <remap from="~sensor_' + str(index) + '/image"       to="/$(arg sensor_' + str(index) + '_name)/intensity/image_resized" />\n')

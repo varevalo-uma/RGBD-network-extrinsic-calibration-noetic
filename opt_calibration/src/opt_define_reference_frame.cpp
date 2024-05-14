@@ -341,7 +341,7 @@ bool OPTDefineReferenceFrame::compute_and_save(const std::vector<Eigen::Vector2d
 //  cv::waitKey(0);
 
   // Save results:
-  save(correction_transform);
+  return save(correction_transform);
 }
 
 bool OPTDefineReferenceFrame::save(Pose correction_transform)
