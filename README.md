@@ -1,11 +1,16 @@
-open_ptrack
-===========
+open_ptrack (RGBD network extrinsic calibration)
+================================================
 
-http://openptrack.org/
-https://github.com/OpenPTrack/open_ptrack_v2
+Project URL: http://openptrack.org/
+
+Original repository: https://github.com/OpenPTrack/open_ptrack_v2
 
 ---
-This repository only contains the nodes related to the extrinsic calibration of four RGBD sensors. All other nodes have been removed. In addition, several changes have been made to the source files to adapt them to noetic ROS1. Most of the changes made in the code were aimed at correcting the errors produced by the use of libraries that have undergone important changes in their api, directory structure, etc. This was the case of the opencv library. I would like to thank the authors of the OpenPTrack source code for making their work available to the community :-).
+This repository only contains the nodes related to the extrinsic calibration of a RGBD sensors' network (four, to be specific). All other nodes have been removed. In addition, several changes have been made to the source files to adapt them to noetic ROS1. Most of the changes made in the code were aimed at correcting the errors produced by the use of libraries that have undergone important changes in their api, directory structure, etc. This was the case of the opencv library.
+
+I would like to thank the authors of the OpenPTrack source code for making their work available to the community :-).
+
+Vicente
 
 ---
 
