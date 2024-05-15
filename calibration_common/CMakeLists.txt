@@ -23,7 +23,7 @@ find_package(Boost REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(PCL REQUIRED)
 find_package(OpenCV REQUIRED)
-FIND_PACKAGE(Ceres REQUIRED)
+find_package(Ceres REQUIRED)
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and scripts declared therein get installed
@@ -126,7 +126,7 @@ catkin_package(
   INCLUDE_DIRS include
   LIBRARIES ${PROJECT_NAME} calibration_algorithms
   CATKIN_DEPENDS tf image_geometry eigen_conversions visualization_msgs calibration_msgs
-  DEPENDS pcl eigen opencv2 ceres
+#  DEPENDS pcl eigen3 opencv ceres
 )
 
 ###########
